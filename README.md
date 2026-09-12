@@ -51,7 +51,7 @@ npm run dev
 ```
 ## Live Demo
 
-[Live Demo](YOUR_VERCEL_URL)
+[Live Demo](https://velozity-dashboard-flame.vercel.app/dashboard)
 
 ## Repository
 
