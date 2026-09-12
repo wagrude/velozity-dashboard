@@ -7,7 +7,7 @@ function refreshCookieOptions(): CookieOptions {
   return {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
     maxAge: REFRESH_TOKEN_MAX_AGE_MS,
     path: "/",
   };
@@ -21,7 +21,7 @@ export function clearRefreshTokenCookie(res: Response) {
   res.clearCookie(REFRESH_TOKEN_COOKIE, {
     httpOnly: true,
     secure: process.env.NODE_ENV === "production",
-    sameSite: "strict",
+    sameSite: process.env.NODE_ENV === "production" ? "none" : "strict",
     path: "/",
   });
 }
