@@ -55,7 +55,7 @@ npm run dev
 
 ## Repository
 
-[GitHub Repository](YOUR_GITHUB_URL)
+[GitHub Repository](https://github.com/wagrude/velozity-dashboard)
 
 ## Demo Accounts
 
